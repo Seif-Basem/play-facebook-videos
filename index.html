@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playing videos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@340;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/myframework.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Load Facebook SDK for JavaScript (i think this is api to run facbook embed videos)-->
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '{your-app-id}',
+                xfbml      : true,
+                version    : 'v3.2'
+            });
+            // Get Embedded Video Player API Instance
+            var my_video_player;
+            FB.Event.subscribe('xfbml.ready', function(msg) {
+                if (msg.type === 'video') {
+                    my_video_player = msg.instance;
+                        my_video_player.play();
+                }
+            });
+        };
+    </script>
+    <div id="fb-root"></div>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <!-- Start Header -->
+    <header>
+        <div class="container f-between">
+            <div class="left">
+                <input type="text" id="search" placeholder="Enter Video Link">
+                <button class="go" id="go">Go</button>
+            </div>
+            <div class="right">
+                <button class="refrech" id="refrech">Refrech</button>
+                <button class="clear" id="clear">Clear</button>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Satrt Section -->
+    <section>
+        <!-- https://www.facebook.com/yassermamdouh4/videos/6117077538376491/ -->
+        <div
+            class="fb-video"
+            data-href=""
+            data-width="340"
+            data-autoplay=""
+            data-allowfullscreen="true">
+        </div>
+        <div
+            class="fb-video"
+            data-href=""
+            data-width="340"
+            data-autoplay=""
+            data-allowfullscreen="true">
+        </div>
+        <div
+            class="fb-video"
+            data-href=""
+            data-width="340"
+            data-autoplay=""
+            data-allowfullscreen="true">
+        </div>
+        <div
+            class="fb-video"
+            data-href=""
+            data-width="340"
+            data-autoplay=""
+            data-allowfullscreen="true">
+        </div>
+        <div
+            class="fb-video"
+            data-href=""
+            data-width="340"
+            data-autoplay=""
+            data-allowfullscreen="true">
+        </div>
+        <div
+            class="fb-video"
+            data-href=""
+            data-width="340"
+            data-autoplay=""
+            data-allowfullscreen="true">
+        </div>
+        <div
+            class="fb-video"
+            data-href=""
+            data-width="340"
+            data-autoplay=""
+            data-allowfullscreen="true">
+        </div>
+        <div
+            class="fb-video"
+            data-href=""
+            data-width="340"
+            data-autoplay=""
+            data-allowfullscreen="true">
+        </div>
+        <div
+            class="fb-video"
+            data-href=""
+            data-width="340"
+            data-autoplay=""
+            data-allowfullscreen="true">
+        </div>
+        <div
+            class="fb-video"
+            data-href=""
+            data-width="340"
+            data-autoplay=""
+            data-allowfullscreen="true">
+        </div>
+        <div
+            class="fb-video"
+            data-href=""
+            data-width="340"
+            data-autoplay=""
+            data-allowfullscreen="true">
+        </div>
+        <div
+            class="fb-video"
+            data-href=""
+            data-width="340"
+            data-autoplay=""
+            data-allowfullscreen="true">
+        </div>
+        <div
+            class="fb-video"
+            data-href=""
+            data-width="340"
+            data-autoplay=""
+            data-allowfullscreen="true">
+        </div>
+        <div
+            class="fb-video"
+            data-href=""
+            data-width="340"
+            data-autoplay=""
+            data-allowfullscreen="true">
+        </div>
+        <div
+            class="fb-video"
+            data-href=""
+            data-width="340"
+            data-autoplay=""
+            data-allowfullscreen="true">
+        </div>
+    </section>
+    <!-- End Section -->
+    <script src="js/main.js"></script>
+</body>
+</html>
