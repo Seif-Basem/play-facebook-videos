@@ -1,6 +1,7 @@
 body{
     font-family: 'Inter', sans-serif;
     background-color: hsl(230, 17%, 14%);
+    /* background-color:rgba(24, 119, 242, 90); */
 }
 /* start scrollbar */
 ::-webkit-scrollbar
